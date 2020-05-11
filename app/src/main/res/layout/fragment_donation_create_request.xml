@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/donation_fragment_lnlay_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_name"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_age"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="age"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/donation_fragment_sp_type_blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_number_complaisant"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="number of complaisant"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_hospital_name"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="hospital name"
+                    android:inputType="text" />
+
+
+                <LinearLayout
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/donation_fragment_et_adress_hospital"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/hintcolor"
+                        android:padding="@dimen/d5"
+                        android:text="adress of hospital"
+                        android:textColorHint="@color/hintcolor" />
+
+                    <ImageView
+                        android:id="@+id/donation_fragment_im_location"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_location_on_black_24dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/donation_fragment_sp_muhafza"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/donation_fragment_ll_city"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/donation_fragment_sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_phone"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/donation_fragment_et_note"
+                    style="@style/InputTextDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d120"
+                    android:hint="note"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donation_fragment_lnlay_view"
+                android:layout_margin="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/donation_fragment_bt_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shaprede"
+                    android:text="send" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

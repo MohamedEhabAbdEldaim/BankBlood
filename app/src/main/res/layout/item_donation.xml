@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_reveal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d5"
+    android:layout_marginTop="@dimen/d3"
+    android:layout_marginEnd="@dimen/d5"
+    android:background="@null"
+    app:dragEdge="left"
+    app:mode="same_level">
+
+
+    <LinearLayout
+        android:id="@+id/donation_item_ll_buttons_container"
+        android:layout_width="@dimen/d100"
+        android:layout_height="@dimen/d100"
+        android:layout_margin="@dimen/d4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/donation_item_rl_bt_info"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:layout_marginStart="@dimen/d4"
+                android:layout_marginEnd="@dimen/d4"
+                android:background="@drawable/shap_info_back" />
+
+            <ImageButton
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d30"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/ic_info_black_24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/donation_item_rl_bt_call"
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:layout_marginEnd="@dimen/d4"
+                android:background="@drawable/shap_call_back" />
+
+            <ImageButton
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d30"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/ic_call_black_24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/donation_item_rl_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/d2">
+
+            <TextView
+                android:id="@+id/donation_item_tv_blood_type"
+                android:layout_width="@dimen/d80"
+                android:layout_height="@dimen/d80"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/d2"
+                android:background="@drawable/redcircle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/d2"
+                android:layout_marginStart="@dimen/dn30"
+                android:layout_toEndOf="@id/donation_item_tv_blood_type"
+                android:background="@drawable/halfcircleright"
+                android:orientation="vertical"
+                android:padding="@dimen/d2">
+
+
+                <TextView
+                    android:id="@+id/donation_item_tv_patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/d8"
+                    android:paddingTop="@dimen/d2"
+                    android:paddingEnd="@dimen/d8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+                <TextView
+                    android:id="@+id/donation_item_tv_hospital_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/d8"
+                    android:paddingTop="@dimen/d2"
+                    android:paddingEnd="@dimen/d8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+                <TextView
+                    android:id="@+id/donation_item_tv_city_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/d8"
+                    android:paddingTop="@dimen/d2"
+                    android:paddingEnd="@dimen/d8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HomeActivity">
+    <RelativeLayout
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:background="@color/hintcolor"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/home_img_back"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/d14"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:id="@+id/home_app_bar_text_view_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/d8"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_20sp" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@+id/home_toolbar"
+        android:id="@+id/home_frame_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_lnly_menu" />
+
+    <LinearLayout
+
+        android:id="@+id/home_lnly_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menubackgroundpic"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_img_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/d10"
+            android:src="@drawable/morepic" />
+
+        <ImageView
+            android:id="@+id/home_img_notfiction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/d10"
+            android:src="@drawable/notificationpic" />
+
+        <ImageView
+            android:id="@+id/home_img_profil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/d10"
+            android:src="@drawable/etideprofialpic" />
+
+        <ImageView
+            android:id="@+id/home_img_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/d10"
+            android:src="@drawable/homepic" />
+    </LinearLayout>
+
+</RelativeLayout>

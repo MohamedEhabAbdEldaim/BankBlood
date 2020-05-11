@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2.5">
+
+
+    <ImageView
+        android:id="@+id/item_pager_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_pager_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/d8"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="@color/hintcolor"
+        android:textSize="@dimen/txt_16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+        android:layout_weight=".15"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item_pager_ll_slider_steps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/item_pager_btn_slider_next"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/item_pager_btn_slider_next"
+            android:layout_width="@dimen/d36"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginEnd="@dimen/d8"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+</LinearLayout>

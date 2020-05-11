@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/d8"
+    android:orientation="vertical">
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:scrollbars="vertical">-->
+
+    <LinearLayout
+        android:id="@+id/fragment_more_faviourt_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d40"
+            android:src="@drawable/afterlike" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:text="@string/Favorite"
+            android:textColor="@color/hintcolor"
+            android:textSize="@dimen/txt_30sp" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_connect_us_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d40"
+            android:src="@drawable/emailpic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:text="@string/connect_us"
+            android:textColor="@color/hintcolor"
+            android:textSize="@dimen/txt_30sp" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_about_us_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d40"
+            android:src="@drawable/afterlike" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:text="@string/about_app"
+            android:textColor="@color/hintcolor"
+            android:textSize="@dimen/txt_30sp" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!--  <LinearLayout
+          android:id="@+id/fragment_more_app_in_google_ll"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/d14"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:layout_width="@dimen/d50"
+              android:layout_height="@dimen/d40"
+              android:src="@drawable/ic_star_black_24dp" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:text="app in google"
+              android:textColor="@color/hintcolor"
+              android:textSize="30sp" />
+      </LinearLayout>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/graydark" />
+  -->
+    <LinearLayout
+        android:id="@+id/fragment_more_setting_notification_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d40"
+            android:src="@drawable/afterlike" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:text="@string/setting_notification"
+            android:textColor="@color/hintcolor"
+            android:textSize="@dimen/txt_30sp" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_sign_out_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d40"
+            android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d20"
+            android:text="@string/exit"
+            android:textColor="@color/hintcolor"
+            android:textSize="@dimen/txt_30sp" />
+    </LinearLayout>
+    <!--    </ScrollView>-->
+</LinearLayout>

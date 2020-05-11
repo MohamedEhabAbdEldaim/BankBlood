@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_post_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d200"
+    android:layout_marginTop="@dimen/d8"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/d8">
+
+        <ImageView
+            android:id="@+id/item_post_img_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/item_post_rl_favourite"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:layout_alignEnd="@id/item_post_img_post"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/d4"
+            android:layout_marginEnd="@dimen/d4"
+            android:background="@drawable/circle2">
+
+            <ImageView
+                android:id="@+id/item_post_img_like"
+                android:layout_width="@dimen/d16"
+                android:layout_height="@dimen/d16"
+                android:layout_centerInParent="true"
+                android:src="@drawable/beforelike" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/backgrondpost_title">
+
+            <TextView
+                android:id="@+id/item_post_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mohamed"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

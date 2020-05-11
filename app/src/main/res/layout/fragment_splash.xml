@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_splash_images"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splash_img_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d250"
+            android:layout_above="@+id/splash_img_center"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dn30"
+            android:layout_marginTop="@dimen/dn25"
+            android:layout_marginEnd="@dimen/dn10"
+            android:src="@drawable/splash1" />
+
+        <LinearLayout
+            android:id="@+id/splash_img_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/d210"
+                android:layout_height="@dimen/d210"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginEnd="@dimen/d12"
+                android:fontFamily="@font/shekari_font"
+                android:text="@string/app_name"
+                android:textColor="@color/txt_color2"
+                android:textSize="@dimen/txt_30sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/splash_img_below"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d250"
+            android:layout_below="@+id/splash_img_center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dn20"
+            android:layout_marginEnd="@dimen/dn30"
+            android:layout_marginBottom="@dimen/dn30"
+            android:src="@drawable/splash2" />
+    </RelativeLayout>
+
+
+</LinearLayout>

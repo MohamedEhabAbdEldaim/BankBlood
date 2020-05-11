@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_fragment_ll_back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/d8">
+
+            <TextView
+                android:id="@+id/register_fragment_text_view_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/d8"
+                android:maxLines="1"
+                android:text="@string/create_new_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_20sp" />
+
+            <LinearLayout
+                android:id="@+id/register_fragment_lnlay_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/register_fragment_text_view_change"
+                android:layout_margin="@dimen/d10"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/register_fragment_et_name"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/namepic"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/register_fragment_et_email"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/emailpic"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress|textNoSuggestions" />
+
+                <TextView
+                    android:id="@+id/register_fragment_et_birthday"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/datapic"
+                    android:hint="@string/birthday" />
+
+                <TextView
+                    android:id="@+id/register_fragment_et_last_data_donate"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/datapic"
+                    android:hint="@string/last_data_donation" />
+
+                <LinearLayout
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bloodtypepic" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_et_blood_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/citypic" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_et_muhafza"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_fragment_liner_city"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/citypic" />
+
+                    <Spinner
+                        android:id="@+id/register_fragment_et_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/register_fragment_et_phone"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/phonpic"
+                    android:hint="@string/Phone"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/register_fragment_et_password"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/passwordpic"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    app:passwordToggleEnabled="true" />
+
+                <EditText
+                    android:id="@+id/register_fragment_et_confirm_password"
+                    style="@style/InputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/passwordpic"
+                    android:hint="@string/confirm_Password"
+                    android:inputType="textPassword"
+                    app:passwordToggleEnabled="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_fragment_lnlay_view"
+                android:layout_margin="@dimen/d10"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/register_fragment_bt_sing_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shap"
+                    android:text="@string/Sing_up" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

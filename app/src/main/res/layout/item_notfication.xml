@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d50"
+    android:layout_marginStart="@dimen/d8"
+    android:layout_marginTop="@dimen/d8"
+    android:layout_marginEnd="@dimen/d8"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_notification_im_icon"
+        android:layout_width="@dimen/d40"
+        android:layout_height="@dimen/d40"
+        android:layout_marginStart="@dimen/d4"
+        android:layout_marginEnd="@dimen/d4"
+        android:layout_marginTop="@dimen/d4"
+        android:src="@drawable/ic_notifications_black_24dp" />
+
+    <TextView
+        android:id="@+id/item_notification_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+        android:layout_toEndOf="@id/item_notification_im_icon"
+        android:layout_toStartOf="@id/item_notification_tv_time"
+        />
+
+    <TextView
+        android:id="@+id/item_notification_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+        android:drawableStart="@drawable/ic_clock"
+        android:gravity="center_vertical"
+        android:textColor="@color/txt_color3" />
+
+
+</RelativeLayout>
